@@ -1,0 +1,40 @@
+.featured{
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 15px;
+    margin-top: 10% ;
+    padding: 5%;
+}
+.featured h1{
+    margin: 0px auto 5% auto;
+    color:white;
+    font-size: 3em;
+}
+
+.writers{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   place-items: center;
+   gap: 50px;
+}
+
+
+
+@media only screen and (max-width:780px){
+    .writers{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+        gap: 50px;
+     }
+  }
+
+
+  @media only screen and (max-width:500px){
+    .writers{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        gap: 50px;
+     }
+  }
